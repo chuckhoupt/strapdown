@@ -112,7 +112,7 @@
   //
 
   // Generate Markdown
-  var html = marked(markdown);
+  var html = marked(markdown, {pedantic: true});
   document.getElementById('content').innerHTML = html;
 
   // Prettify
